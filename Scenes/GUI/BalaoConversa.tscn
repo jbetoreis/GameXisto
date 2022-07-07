@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Interface/BalaoConversa.png" type="Texture" id=1]
+[ext_resource path="res://Fonts/NotoSansMono_Condensed-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+outline_size = 1
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=3]
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ".", "..", "...", "....", ".....", "" ]
+}
+
+[node name="PanelContainer" type="PanelContainer"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 0.15, 0.15 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_top = 14.0
+margin_right = 64.0
+margin_bottom = 49.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "."
+align = 1
+valign = 1
+
+[node name="Animacao" type="AnimationPlayer" parent="."]
+autoplay = "Escrevendo"
+playback_speed = 0.35
+anims/Escrevendo = SubResource( 3 )

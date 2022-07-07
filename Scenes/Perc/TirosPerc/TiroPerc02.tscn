@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Animacao/TiroPerc/Tiro02Pronto.tres" type="Animation" id=1]
+[ext_resource path="res://Animacao/TiroPerc/TiroPerc.tres" type="Animation" id=2]
+[ext_resource path="res://Scripts/Perc/TiroPerc/TiroPerc02.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Perc/tiro/spream/xisto-projetil-stream0005.png" type="Texture" id=4]
+
+[node name="TiroPerc01" type="Node2D"]
+scale = Vector2( 8, 4 )
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.0617828, -0.0580139 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+offset = Vector2( 7.93822, 4.05801 )
+
+[node name="Detector" type="Area2D" parent="Sprite"]
+collision_layer = 256
+collision_mask = 256
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/Detector"]
+polygon = PoolVector2Array( -1.4077, -0.663312, 14.7855, -2.24111, 15.0346, 2.3262 )
+
+[node name="AnimacaoTiro" type="AnimationPlayer" parent="."]
+playback_speed = 2.0
+anims/Tiro02Pronto = ExtResource( 1 )
+anims/TiroPerc = ExtResource( 2 )
+[connection signal="body_entered" from="Sprite/Detector" to="." method="_on_Detector_body_entered"]

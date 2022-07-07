@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Komiku_-_43_-_Travel_to_the_Horizon.wav-3d249d820e7290e53df688048bf53487.sample"
+
+[deps]
+
+source_file="res://Sons/Komiku_-_43_-_Travel_to_the_Horizon.wav"
+dest_files=[ "res://.import/Komiku_-_43_-_Travel_to_the_Horizon.wav-3d249d820e7290e53df688048bf53487.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

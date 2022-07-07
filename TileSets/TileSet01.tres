@@ -1,0 +1,399 @@
+[gd_resource type="TileSet" load_steps=26 format=2]
+
+[ext_resource path="res://Assets/Tiles/tile set/chão 1 .png" type="Texture" id=1]
+[ext_resource path="res://Assets/Tiles/tile set/chão 2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Tiles/tile set/chão 3.1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 1 (bloco sosinho).png" type="Texture" id=4]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 2 (bloco chão,cima ).png" type="Texture" id=5]
+[ext_resource path="res://Assets/Tiles/tile set/chão 3.2.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 3 (bloco lado,chão).png" type="Texture" id=7]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 4 (bloco lado,cima ).png" type="Texture" id=8]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 5 (bloco lado).png" type="Texture" id=9]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 6 (bloco cima,fim).png" type="Texture" id=10]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 9 (bloco nada,junta).png" type="Texture" id=11]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 7 (bloco cima).png" type="Texture" id=12]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 8 (bloco nada).png" type="Texture" id=13]
+[ext_resource path="res://Assets/Tiles/tile set/calsada1.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Tiles/Muro.png" type="Texture" id=15]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 15.9966, 15.973 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16.1591, 14.1935 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 16.0449, 15.7458 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 15.9384, 14.6123 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 16.1507, 1.7159 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 16.1021, 0.748966 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 15.4158, 11.4228 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 14.8444, 14.1693 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 14.8444, 15.8023 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 14.9043, 15.9485 )
+
+[resource]
+0/name = "Chao01"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 16, 16 )
+0/navigation_offset = Vector2( 16, 16 )
+0/shape_offset = Vector2( 16, 16 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 16, 16 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 16, 16 )
+} ]
+0/z_index = 0
+1/name = "Chao02"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 16, 16 )
+1/navigation_offset = Vector2( 16, 16 )
+1/shape_offset = Vector2( 16, 16 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 16, 16 )
+1/shape = SubResource( 1 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 16, 16 )
+} ]
+1/z_index = 0
+2/name = "Chao03_1"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 32, 32 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 16, 16 )
+2/navigation_offset = Vector2( 16, 16 )
+2/shape_offset = Vector2( 16, 17 )
+2/shape_transform = Transform2D( 1, 0, 0, 1.3, 16, 17 )
+2/shape = SubResource( 7 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1.3, 16, 17 )
+} ]
+2/z_index = 0
+3/name = "Chao03_2"
+3/texture = ExtResource( 6 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 32, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 16, 16 )
+3/navigation_offset = Vector2( 16, 16 )
+3/shape_offset = Vector2( 16, 17 )
+3/shape_transform = Transform2D( 1, 0, 0, 1.3, 16, 17 )
+3/shape = SubResource( 7 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1.3, 16, 17 )
+} ]
+3/z_index = 0
+4/name = "Plataforma01Sozinho"
+4/texture = ExtResource( 4 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 32, 32 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 16, 16 )
+4/navigation_offset = Vector2( 16, 16 )
+4/shape_offset = Vector2( 17, 18 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 17, 18 )
+4/shape = SubResource( 8 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 17, 18 )
+} ]
+4/z_index = 0
+5/name = "Plataforma02ChaoCima"
+5/texture = ExtResource( 5 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 32, 32 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 16, 16 )
+5/navigation_offset = Vector2( 16, 16 )
+5/shape_offset = Vector2( 17, 18 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 17, 18 )
+5/shape = SubResource( 8 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 17, 18 )
+} ]
+5/z_index = 0
+6/name = "Plataforma03LadoChao"
+6/texture = ExtResource( 7 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 32, 32 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 16, 16 )
+6/navigation_offset = Vector2( 16, 16 )
+6/shape_offset = Vector2( 17, 16 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 17, 16 )
+6/shape = SubResource( 9 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 17, 16 )
+} ]
+6/z_index = 0
+7/name = "Plataforma04BlocoLadoCima"
+7/texture = ExtResource( 8 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 32, 32 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 16, 16 )
+7/navigation_offset = Vector2( 16, 16 )
+7/shape_offset = Vector2( 17, 18 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 17, 18 )
+7/shape = SubResource( 8 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 17, 18 )
+} ]
+7/z_index = 0
+8/name = "Plataforma05BlocoLado"
+8/texture = ExtResource( 9 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 32, 32 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 16, 16 )
+8/navigation_offset = Vector2( 16, 16 )
+8/shape_offset = Vector2( 17, 16 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 17, 16 )
+8/shape = SubResource( 10 )
+8/shape_one_way = false
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 17, 16 )
+} ]
+8/z_index = 0
+9/name = "Plataforma06BlocoCimaFim"
+9/texture = ExtResource( 10 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 32, 32 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 16, 16 )
+9/navigation_offset = Vector2( 16, 16 )
+9/shape_offset = Vector2( 16, 18 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 16, 18 )
+9/shape = SubResource( 2 )
+9/shape_one_way = false
+9/shape_one_way_margin = 1.0
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 16, 18 )
+} ]
+9/z_index = 0
+10/name = "Plataforma07BlocoCima"
+10/texture = ExtResource( 12 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 32, 32 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 16, 16 )
+10/navigation_offset = Vector2( 16, 16 )
+10/shape_offset = Vector2( 16, 18 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 16, 18 )
+10/shape = SubResource( 2 )
+10/shape_one_way = false
+10/shape_one_way_margin = 1.0
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 16, 18 )
+} ]
+10/z_index = 0
+11/name = "Plataforma08BlocoNada"
+11/texture = ExtResource( 13 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 32, 32 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 16, 16 )
+11/navigation_offset = Vector2( 16, 16 )
+11/shape_offset = Vector2( 16, 16 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 16, 16 )
+11/shape = SubResource( 3 )
+11/shape_one_way = false
+11/shape_one_way_margin = 1.0
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 16, 16 )
+} ]
+11/z_index = 0
+12/name = "Plataforma09BlocoNadaJunta"
+12/texture = ExtResource( 11 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 32, 32 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 16, 16 )
+12/navigation_offset = Vector2( 16, 16 )
+12/shape_offset = Vector2( 16, 16 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 16, 16 )
+12/shape = SubResource( 3 )
+12/shape_one_way = false
+12/shape_one_way_margin = 1.0
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 16, 16 )
+} ]
+12/z_index = 0
+13/name = "PlatTut"
+13/texture = ExtResource( 12 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 32, 32 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 16, 16 )
+13/navigation_offset = Vector2( 16, 16 )
+13/shape_offset = Vector2( 16, 17.7946 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 16, 17.7946 )
+13/shape = SubResource( 4 )
+13/shape_one_way = false
+13/shape_one_way_margin = 1.0
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 16, 17.7946 )
+} ]
+13/z_index = 0
+14/name = "calsada1"
+14/texture = ExtResource( 14 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 0, 0, 32, 32 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 16, 16 )
+14/navigation_offset = Vector2( 16, 16 )
+14/shape_offset = Vector2( 15.9053, 31.4597 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 15.9053, 31.4597 )
+14/shape = SubResource( 5 )
+14/shape_one_way = false
+14/shape_one_way_margin = 1.0
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 15.9053, 31.4597 )
+} ]
+14/z_index = 0
+15/name = "Muro"
+15/texture = ExtResource( 15 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 0, 0, 32, 32 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 16, 16 )
+15/navigation_offset = Vector2( 16, 16 )
+15/shape_offset = Vector2( 16.0995, 4.0954 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 16.0995, 4.0954 )
+15/shape = SubResource( 6 )
+15/shape_one_way = false
+15/shape_one_way_margin = 1.0
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 16.0995, 4.0954 )
+} ]
+15/z_index = 1
+16/name = "MuroSemColisao"
+16/texture = ExtResource( 15 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 0, 0, 32, 32 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 16, 16 )
+16/navigation_offset = Vector2( 16, 16 )
+16/shape_offset = Vector2( 0, 0 )
+16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape_one_way = false
+16/shape_one_way_margin = 0.0
+16/shapes = [  ]
+16/z_index = 1

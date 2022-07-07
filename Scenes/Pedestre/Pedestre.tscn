@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/GUI/BalaoConversa.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Pedrestes/Animacao.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Pedestre/IconeInfectado/Icone.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Pedrestes/Pedrestre.gd" type="Script" id=19]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6.79581, 16.3175 )
+
+[sub_resource type="SpriteFrames" id=2]
+resource_local_to_scene = true
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "Parado",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "AndandoMascara",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "Andando",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "ParadoMascara",
+"speed": 5.0
+} ]
+
+[node name="Pedestre" type="Area2D" groups=[
+"Exclusao",
+"Pedestre",
+]]
+scale = Vector2( 3, 3 )
+script = ExtResource( 19 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.420921, 1.824 )
+shape = SubResource( 1 )
+
+[node name="Animacao" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "Andando"
+playing = true
+script = ExtResource( 2 )
+
+[node name="Spawner" type="Timer" parent="."]
+autostart = true
+
+[node name="BalaoFalando" type="Timer" parent="."]
+autostart = true
+
+[node name="TempoParado" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[node name="PontoDeSpawn" type="Position2D" parent="."]
+position = Vector2( 3.99323, -6.04431 )
+
+[node name="PanelContainer" parent="." instance=ExtResource( 1 )]
+visible = false
+margin_left = 3.0
+margin_top = -15.0
+margin_right = 67.0
+margin_bottom = 39.0
+
+[node name="IconeInfectado" type="Sprite" parent="."]
+position = Vector2( 0, -20 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 3 )
+[connection signal="area_entered" from="." to="." method="_on_Pedestre_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_Pedestre_area_exited"]
+[connection signal="timeout" from="Spawner" to="." method="_on_Spawner_timeout"]
+[connection signal="timeout" from="BalaoFalando" to="." method="_on_BalaoFalando_timeout"]
+[connection signal="timeout" from="TempoParado" to="." method="_on_TempoParado_timeout"]

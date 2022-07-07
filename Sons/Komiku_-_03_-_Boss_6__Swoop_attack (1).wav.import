@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Komiku_-_03_-_Boss_6__Swoop_attack (1).wav-8bd92f81ac9cce3131faf48e00df56be.sample"
+
+[deps]
+
+source_file="res://Sons/Komiku_-_03_-_Boss_6__Swoop_attack (1).wav"
+dest_files=[ "res://.import/Komiku_-_03_-_Boss_6__Swoop_attack (1).wav-8bd92f81ac9cce3131faf48e00df56be.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

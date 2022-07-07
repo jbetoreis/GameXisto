@@ -1,0 +1,32 @@
+[gd_resource type="Animation" load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Perc/tiro/spream/xisto-projetil-stream0005.png" type="Texture" id=5]
+
+[resource]
+resource_name = "Tiro02Pronto"
+length = 0.7
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 5 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite/Detector/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -1.4077, -0.663312, 14.7855, -2.24111, 15.0346, 2.3262 ) ]
+}

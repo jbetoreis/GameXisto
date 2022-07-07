@@ -1,0 +1,78 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Interface/FundoTelaPause.png" type="Texture" id=1]
+[ext_resource path="res://Fonts/NotoSansMono_Condensed-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Interface/IconRecarregar.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Interface/IconDespausar.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/Menu/TelaPause.gd" type="Script" id=5]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+outline_size = 1
+font_data = ExtResource( 2 )
+
+[node name="TelaPause" type="CanvasLayer"]
+pause_mode = 2
+layer = 100
+offset = Vector2( 512, 232 )
+transform = Transform2D( 1, 0, 0, 1, 512, 232 )
+script = ExtResource( 5 )
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_right = 256.0
+margin_bottom = 256.0
+rect_min_size = Vector2( 256, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+margin_right = 256.0
+margin_bottom = 256.0
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
+margin_right = 256.0
+margin_bottom = 34.0
+custom_fonts/font = SubResource( 2 )
+text = "Jogo pausado"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer"]
+margin_top = 38.0
+margin_right = 256.0
+margin_bottom = 256.0
+size_flags_vertical = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelContainer/VBoxContainer/HBoxContainer"]
+margin_right = 126.0
+margin_bottom = 218.0
+size_flags_horizontal = 3
+
+[node name="Pause" type="TextureButton" parent="PanelContainer/VBoxContainer/HBoxContainer/CenterContainer"]
+margin_left = 31.0
+margin_top = 77.0
+margin_right = 95.0
+margin_bottom = 141.0
+texture_normal = ExtResource( 4 )
+
+[node name="CenterContainer2" type="CenterContainer" parent="PanelContainer/VBoxContainer/HBoxContainer"]
+margin_left = 130.0
+margin_right = 256.0
+margin_bottom = 218.0
+size_flags_horizontal = 3
+
+[node name="Recarregar" type="TextureButton" parent="PanelContainer/VBoxContainer/HBoxContainer/CenterContainer2"]
+margin_left = 31.0
+margin_top = 77.0
+margin_right = 95.0
+margin_bottom = 141.0
+texture_normal = ExtResource( 3 )
+[connection signal="button_up" from="PanelContainer/VBoxContainer/HBoxContainer/CenterContainer/Pause" to="." method="_on_Pause_button_up"]
+[connection signal="button_up" from="PanelContainer/VBoxContainer/HBoxContainer/CenterContainer2/Recarregar" to="." method="_on_Recarregar_button_up"]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8.50195, 106.406 )
+
+[node name="AreaSegura" type="Area2D" groups=[
+"AreaSegura",
+"Exclusao",
+]]
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )

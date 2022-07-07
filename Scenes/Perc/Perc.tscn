@@ -1,0 +1,203 @@
+[gd_scene load_steps=62 format=2]
+
+[ext_resource path="res://Animacao/Perc/AndandoSemMascara.tres" type="Animation" id=1]
+[ext_resource path="res://Animacao/Perc/ArrastandoSemMascara.tres" type="Animation" id=2]
+[ext_resource path="res://Animacao/Perc/AndandoComMascara.tres" type="Animation" id=3]
+[ext_resource path="res://Animacao/ArrastandoComMascara.tres" type="Animation" id=4]
+[ext_resource path="res://Animacao/CorrendoSemMascara.tres" type="Animation" id=5]
+[ext_resource path="res://Animacao/IniciandoPuloComMascara.tres" type="Animation" id=6]
+[ext_resource path="res://Animacao/CaindoComMascara.tres" type="Animation" id=7]
+[ext_resource path="res://Scripts/Perc/Perc.gd" type="Script" id=8]
+[ext_resource path="res://Animacao/CorrendoComMascara.tres" type="Animation" id=9]
+[ext_resource path="res://Animacao/LevantandoSemMascara.tres" type="Animation" id=10]
+[ext_resource path="res://Animacao/LevantandoComMascara.tres" type="Animation" id=11]
+[ext_resource path="res://Animacao/AgaixandoComMascara.tres" type="Animation" id=12]
+[ext_resource path="res://Animacao/AbaixadoComArmaComMascaraDireita.tres" type="Animation" id=13]
+[ext_resource path="res://Animacao/AbaixandoComArma.tres" type="Animation" id=14]
+[ext_resource path="res://Animacao/AbaixadoComArmaSemMascaraEsquerda.tres" type="Animation" id=15]
+[ext_resource path="res://Animacao/AbaixadoComArmaComMascaraEsquerda.tres" type="Animation" id=16]
+[ext_resource path="res://Animacao/PulandoComArmaComMascaraDireita.tres" type="Animation" id=17]
+[ext_resource path="res://Scripts/Perc/GeraTiro.gd" type="Script" id=18]
+[ext_resource path="res://Animacao/CaindoSemMascara.tres" type="Animation" id=19]
+[ext_resource path="res://Animacao/AtacandoSemMascaraDireita.tres" type="Animation" id=20]
+[ext_resource path="res://Animacao/ParadoSemMascaraAgaixado.tres" type="Animation" id=21]
+[ext_resource path="res://Animacao/CaindoComArmaSemMascaraDireita.tres" type="Animation" id=22]
+[ext_resource path="res://Scenes/Stages/Stage01.tres" type="Animation" id=23]
+[ext_resource path="res://Animacao/PulandoComArmaSem,MascaraDireita.tres" type="Animation" id=24]
+[ext_resource path="res://Animacao/AgaixadoSemMascara.tres" type="Animation" id=25]
+[ext_resource path="res://Animacao/PulandoComArmaSemMascaraEsquerda.tres" type="Animation" id=26]
+[ext_resource path="res://Animacao/PulandoComArmaSemMascaraDireita.tres" type="Animation" id=27]
+[ext_resource path="res://Animacao/IniciandoPuloSemMascara.tres" type="Animation" id=28]
+[ext_resource path="res://Animacao/PulandoSemMascara.tres" type="Animation" id=29]
+[ext_resource path="res://Animacao/FinalizandoPuloSemMascara.tres" type="Animation" id=30]
+[ext_resource path="res://Animacao/FinalizandoPuloComMascara.tres" type="Animation" id=31]
+[ext_resource path="res://Animacao/PulandoComArmaComMascaraEsquerda.tres" type="Animation" id=32]
+[ext_resource path="res://Animacao/CaindoComArmaComMascaraEsquerda.tres" type="Animation" id=33]
+[ext_resource path="res://Animacao/ParadoComMascaraAgaixado.tres" type="Animation" id=34]
+[ext_resource path="res://Animacao/PulandoComMascara.tres" type="Animation" id=35]
+[ext_resource path="res://Animacao/ParadoComMascara.tres" type="Animation" id=36]
+[ext_resource path="res://Animacao/ParadoSemMascara.tres" type="Animation" id=37]
+[ext_resource path="res://Animacao/AtacandoSemMascaraEsquerda.tres" type="Animation" id=38]
+[ext_resource path="res://Animacao/AtacandoComMascaraEsquerda.tres" type="Animation" id=39]
+[ext_resource path="res://Animacao/CaindoComArmaComMascaraDireita.tres" type="Animation" id=40]
+[ext_resource path="res://Animacao/AtacandoComMascaraDireita.tres" type="Animation" id=41]
+[ext_resource path="res://Animacao/AtacandoSemMascaraAbaixadoDireita.tres" type="Animation" id=42]
+[ext_resource path="res://Animacao/AtacandoComMascaraAbaixadoDireita.tres" type="Animation" id=43]
+[ext_resource path="res://Animacao/AtacandoSemMascaraAbaixadoEsquerda.tres" type="Animation" id=44]
+[ext_resource path="res://Animacao/AtacandoComMascaraAbaixadoEsquerda.tres" type="Animation" id=45]
+[ext_resource path="res://Animacao/ShapeNormal.tres" type="Animation" id=46]
+[ext_resource path="res://Animacao/AgaixadoComMascara.tres" type="Animation" id=47]
+[ext_resource path="res://Animacao/Morte/MorrendoDireita.tres" type="Animation" id=48]
+[ext_resource path="res://Animacao/Morte/MortoDireita.tres" type="Animation" id=49]
+[ext_resource path="res://Animacao/Morte/MortoEsquerda.tres" type="Animation" id=50]
+[ext_resource path="res://Animacao/Morte/MorrendoEsquerda.tres" type="Animation" id=51]
+[ext_resource path="res://Assets/Perc/municao/colecionavel-munição 0007.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Perc/morrendo/xisto-morrendo0003.png" type="Texture" id=53]
+[ext_resource path="res://Fonts/Dance.ttf" type="DynamicFontData" id=54]
+[ext_resource path="res://Assets/Perc/tiro/spray/xisto-projetil-spray 0007.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Perc/atacando/1 abaixando com mascara/xisto-atacando1-abaixando-mascara0002.png" type="Texture" id=56]
+[ext_resource path="res://Animacao/PercShapebaixo.tres" type="Animation" id=57]
+[ext_resource path="res://Scripts/Perc/Camera2D.gd" type="Script" id=58]
+[ext_resource path="res://Sons/SomSpray.wav" type="AudioStream" id=59]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 5.06495, 17.519 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+outline_color = Color( 0.988235, 0.988235, 0.988235, 1 )
+font_data = ExtResource( 54 )
+
+[node name="Perc" type="KinematicBody2D" groups=[
+"Exclusao",
+]]
+position = Vector2( 13, 5 )
+scale = Vector2( 3, 3 )
+z_index = 10
+collision_layer = 3073
+collision_mask = 3073
+script = ExtResource( 8 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 7.45058e-09, -2.79397e-08 )
+z_index = 1
+texture = ExtResource( 56 )
+
+[node name="SpriteMorte" type="Sprite" parent="."]
+visible = false
+z_index = 2
+texture = ExtResource( 53 )
+
+[node name="Shape01" type="CollisionShape2D" parent="."]
+position = Vector2( -4, 7.5 )
+scale = Vector2( 1, 0.5 )
+shape = SubResource( 1 )
+
+[node name="Animacao" type="AnimationPlayer" parent="."]
+anims/AbaixadoComArmaComMascaraDireita = ExtResource( 13 )
+anims/AbaixadoComArmaComMascaraEsquerda = ExtResource( 16 )
+anims/AbaixadoComArmaSemMascaraDireita = ExtResource( 14 )
+anims/AbaixadoComArmaSemMascaraEsquerda = ExtResource( 15 )
+anims/AgaixadoComMascara = ExtResource( 47 )
+anims/AgaixadoSemMascara = ExtResource( 25 )
+anims/AgaixandoComMascara = ExtResource( 12 )
+anims/AgaixandoSemMascara = ExtResource( 23 )
+anims/AndandoComMascara = ExtResource( 3 )
+anims/AndandoSemMascara = ExtResource( 1 )
+anims/ArrastandoComMascara = ExtResource( 4 )
+anims/ArrastandoSemMascara = ExtResource( 2 )
+anims/AtacandoComMascaraAbaixadoDireita = ExtResource( 43 )
+anims/AtacandoComMascaraAbaixadoEsquerda = ExtResource( 45 )
+anims/AtacandoComMascaraDireita = ExtResource( 41 )
+anims/AtacandoComMascaraEsquerda = ExtResource( 39 )
+anims/AtacandoSemMascaraAbaixadoDireita = ExtResource( 42 )
+anims/AtacandoSemMascaraAbaixadoEsquerda = ExtResource( 44 )
+anims/AtacandoSemMascaraDireita = ExtResource( 20 )
+anims/AtacandoSemMascaraEsquerda = ExtResource( 38 )
+anims/CaindoComArmaComMascaraDireita = ExtResource( 40 )
+anims/CaindoComArmaComMascaraEsquerda = ExtResource( 33 )
+anims/CaindoComArmaSemMascaraDireita = ExtResource( 22 )
+anims/CaindoComArmaSemMascaraEsquerda = ExtResource( 24 )
+anims/CaindoComMascara = ExtResource( 7 )
+anims/CaindoSemMascara = ExtResource( 19 )
+anims/CorrendoComMascara = ExtResource( 9 )
+anims/CorrendoSemMascara = ExtResource( 5 )
+anims/FinalizandoPuloComMascara = ExtResource( 31 )
+anims/FinalizandoPuloSemMascara = ExtResource( 30 )
+anims/IniciandoPuloComMascara = ExtResource( 6 )
+anims/IniciandoPuloSemMascara = ExtResource( 28 )
+anims/LevantandoComMascara = ExtResource( 11 )
+anims/LevantandoSemMascara = ExtResource( 10 )
+anims/MorrendoDireita = ExtResource( 48 )
+anims/MorrendoEsquerda = ExtResource( 51 )
+anims/MortoDireita = ExtResource( 49 )
+anims/MortoEsquerda = ExtResource( 50 )
+anims/ParadoComMascara = ExtResource( 36 )
+anims/ParadoComMascaraAgaixado = ExtResource( 34 )
+anims/ParadoSemMascara = ExtResource( 37 )
+anims/ParadoSemMascaraAgaixado = ExtResource( 21 )
+anims/PulandoComArmaComMascaraDireita = ExtResource( 17 )
+anims/PulandoComArmaComMascaraEsquerda = ExtResource( 32 )
+anims/PulandoComArmaSemMascaraDireita = ExtResource( 27 )
+anims/PulandoComArmaSemMascaraEsquerda = ExtResource( 26 )
+anims/PulandoComMascara = ExtResource( 35 )
+anims/PulandoSemMascara = ExtResource( 29 )
+anims/ShapeNormal = ExtResource( 46 )
+anims/Shapebaixo = ExtResource( 57 )
+
+[node name="GeraTiro" type="Position2D" parent="."]
+position = Vector2( 1.7, 6.3 )
+z_index = 5
+script = ExtResource( 18 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = -700
+limit_top = 0
+drag_margin_v_enabled = true
+script = ExtResource( 58 )
+
+[node name="RayDireita" type="RayCast2D" parent="."]
+position = Vector2( 4.25382, 12.4748 )
+rotation = -1.5708
+scale = Vector2( 0.5, 0.025 )
+enabled = true
+
+[node name="RayEsquerda" type="RayCast2D" parent="."]
+position = Vector2( -13.0795, 12.4748 )
+rotation = 1.5708
+scale = Vector2( 0.5, 0.025 )
+enabled = true
+
+[node name="Inventario" type="CanvasLayer" parent="."]
+
+[node name="Municao" type="Sprite" parent="Inventario"]
+position = Vector2( 94, 64 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 52 )
+
+[node name="LabelMunicao" type="Label" parent="Inventario"]
+modulate = Color( 0.972549, 0.972549, 0.972549, 1 )
+margin_left = 122.341
+margin_top = 48.4084
+margin_right = 162.341
+margin_bottom = 88.4084
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArmaEscolhida" type="Sprite" parent="Inventario"]
+position = Vector2( 640, 80 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 55 )
+
+[node name="TempoTremor" type="Timer" parent="."]
+one_shot = true
+
+[node name="AudioSpray" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 59 )
+[connection signal="timeout" from="TempoTremor" to="Camera2D" method="_on_TempoTremor_timeout"]

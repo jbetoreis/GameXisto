@@ -1,0 +1,37 @@
+[gd_resource type="Animation" load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Perc/tiro/spray/xisto-projetil-spray 0002.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Perc/tiro/spray/xisto-projetil-spray 0003.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Perc/tiro/spray/xisto-projetil-spray 0004.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Perc/tiro/spray/xisto-projetil-spray 0005.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Perc/tiro/spray/xisto-projetil-spray 0006.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Perc/tiro/spray/xisto-projetil-spray 0007.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Perc/tiro/spray/xisto-projetil-spray 0001.png" type="Texture" id=7]
+
+[resource]
+resource_name = "TiroPerc01"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1.46409, 1, 2.46229, 1, 1, 1.36604 ),
+"update": 1,
+"values": [ ExtResource( 7 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite/Detector/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -2.57318, -2.09747, -2.57318, -10.4599, 4.02872, -6.93887, 7.98987, 0.103172, 4.02872, 5.82483, -3.01332, 8.02546 ), PoolVector2Array( -2.57318, -2.09747, -1.25281, -12.6605, 8.87012, -8.25925, 10.1905, 3.18406, 5.34911, 9.34585, -3.01332, 8.02546 ), PoolVector2Array( -2.57318, -2.09747, -3.01332, -22.3433, 20.7536, -14.8612, 25.595, 2.74393, 17.6727, 19.0286, -1.69293, 21.2293 ), PoolVector2Array( -2.57318, -2.09747, -2.57318, -37.3077, 18.1128, -34.6669, 32.1969, -23.6637, 43.6402, 3.62419, 21.6338, 34.4331, 0.0675812, 39.2745 ), PoolVector2Array( -2.57318, -2.09747, -2.57318, -37.3077, 18.1128, -34.6669, 32.1969, -23.6637, 43.6402, 3.62419, 21.6338, 34.4331, 0.0675812, 39.2745 ), PoolVector2Array( -2.57318, -2.09747, -2.57318, -37.3077, 18.1128, -34.6669, 32.1969, -23.6637, 43.6402, 3.62419, 21.6338, 34.4331, 0.0675812, 39.2745 ) ]
+}

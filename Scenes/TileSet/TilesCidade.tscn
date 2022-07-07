@@ -1,0 +1,215 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Assets/Tiles/tile set/chão 1 .png" type="Texture" id=1]
+[ext_resource path="res://Assets/Tiles/tile set/chão 2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Tiles/tile set/chão 3.1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Tiles/tile set/chão 3.2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 1 (bloco sosinho).png" type="Texture" id=5]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 2 (bloco chão,cima ).png" type="Texture" id=6]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 3 (bloco lado,chão).png" type="Texture" id=7]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 4 (bloco lado,cima ).png" type="Texture" id=8]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 5 (bloco lado).png" type="Texture" id=9]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 6 (bloco cima,fim).png" type="Texture" id=10]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 9 (bloco nada,junta).png" type="Texture" id=11]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 7 (bloco cima).png" type="Texture" id=12]
+[ext_resource path="res://Assets/Tiles/tile set/plataforma 8 (bloco nada).png" type="Texture" id=13]
+[ext_resource path="res://Assets/Tiles/tile set/calsada1.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Tiles/Muro.png" type="Texture" id=15]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 15.9966, 15.973 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 15.4158, 11.4228 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 14.8444, 14.1693 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 14.8444, 15.8023 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 14.9043, 15.9485 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 16.1591, 14.1935 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 16.0449, 15.7458 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 15.9384, 14.6123 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 16.1507, 1.7159 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 16.1021, 0.748966 )
+
+[node name="Tiles" type="Node2D"]
+
+[node name="Chao01" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+
+[node name="Body" type="StaticBody2D" parent="Chao01"]
+
+[node name="Shape" type="CollisionShape2D" parent="Chao01/Body"]
+shape = SubResource( 1 )
+
+[node name="Chao02" type="Sprite" parent="."]
+position = Vector2( 0, 33 )
+texture = ExtResource( 2 )
+
+[node name="Body" type="StaticBody2D" parent="Chao02"]
+
+[node name="Shape" type="CollisionShape2D" parent="Chao02/Body"]
+shape = SubResource( 1 )
+
+[node name="Chao03_1" type="Sprite" parent="."]
+position = Vector2( 32, 1 )
+texture = ExtResource( 3 )
+
+[node name="Body" type="StaticBody2D" parent="Chao03_1"]
+
+[node name="Shape" type="CollisionShape2D" parent="Chao03_1/Body"]
+position = Vector2( 0, 1 )
+scale = Vector2( 1, 1.3 )
+shape = SubResource( 2 )
+
+[node name="Chao03_2" type="Sprite" parent="."]
+position = Vector2( 32, 34 )
+texture = ExtResource( 4 )
+
+[node name="Body" type="StaticBody2D" parent="Chao03_2"]
+
+[node name="Shape" type="CollisionShape2D" parent="Chao03_2/Body"]
+position = Vector2( 0, 1 )
+scale = Vector2( 1, 1.3 )
+shape = SubResource( 2 )
+
+[node name="Plataforma01Sozinho" type="Sprite" parent="."]
+position = Vector2( 64, 0 )
+texture = ExtResource( 5 )
+
+[node name="Body" type="StaticBody2D" parent="Plataforma01Sozinho"]
+
+[node name="Shape" type="CollisionShape2D" parent="Plataforma01Sozinho/Body"]
+position = Vector2( 1, 2 )
+shape = SubResource( 3 )
+
+[node name="Plataforma02ChaoCima" type="Sprite" parent="."]
+position = Vector2( 64, 33 )
+texture = ExtResource( 6 )
+
+[node name="Body" type="StaticBody2D" parent="Plataforma02ChaoCima"]
+
+[node name="Shape" type="CollisionShape2D" parent="Plataforma02ChaoCima/Body"]
+position = Vector2( 1, 2 )
+shape = SubResource( 3 )
+
+[node name="Plataforma03LadoChao" type="Sprite" parent="."]
+position = Vector2( 96, 33 )
+texture = ExtResource( 7 )
+
+[node name="Body" type="StaticBody2D" parent="Plataforma03LadoChao"]
+
+[node name="Shape" type="CollisionShape2D" parent="Plataforma03LadoChao/Body"]
+position = Vector2( 1, 0 )
+shape = SubResource( 4 )
+
+[node name="Plataforma04BlocoLadoCima" type="Sprite" parent="."]
+position = Vector2( 96, 1 )
+texture = ExtResource( 8 )
+
+[node name="Body" type="StaticBody2D" parent="Plataforma04BlocoLadoCima"]
+
+[node name="Shape" type="CollisionShape2D" parent="Plataforma04BlocoLadoCima/Body"]
+position = Vector2( 1, 2 )
+shape = SubResource( 3 )
+
+[node name="Plataforma05BlocoLado" type="Sprite" parent="."]
+position = Vector2( 129, 1 )
+texture = ExtResource( 9 )
+
+[node name="Body" type="StaticBody2D" parent="Plataforma05BlocoLado"]
+
+[node name="Shape" type="CollisionShape2D" parent="Plataforma05BlocoLado/Body"]
+position = Vector2( 1, 0 )
+shape = SubResource( 5 )
+
+[node name="Plataforma06BlocoCimaFim" type="Sprite" parent="."]
+position = Vector2( 127.898, 31.9948 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Body" type="StaticBody2D" parent="Plataforma06BlocoCimaFim"]
+
+[node name="Shape" type="CollisionShape2D" parent="Plataforma06BlocoCimaFim/Body"]
+position = Vector2( 0, 2 )
+shape = SubResource( 6 )
+
+[node name="Plataforma07BlocoCima" type="Sprite" parent="."]
+position = Vector2( 163, 2 )
+texture = ExtResource( 12 )
+
+[node name="Body" type="StaticBody2D" parent="Plataforma07BlocoCima"]
+
+[node name="Shape" type="CollisionShape2D" parent="Plataforma07BlocoCima/Body"]
+position = Vector2( 0, 2 )
+shape = SubResource( 6 )
+
+[node name="Plataforma08BlocoNada" type="Sprite" parent="."]
+position = Vector2( 163, 35 )
+texture = ExtResource( 13 )
+
+[node name="Body" type="StaticBody2D" parent="Plataforma08BlocoNada"]
+
+[node name="Shape" type="CollisionShape2D" parent="Plataforma08BlocoNada/Body"]
+shape = SubResource( 7 )
+
+[node name="Plataforma09BlocoNadaJunta" type="Sprite" parent="."]
+position = Vector2( 197, 35 )
+texture = ExtResource( 11 )
+
+[node name="Body" type="StaticBody2D" parent="Plataforma09BlocoNadaJunta"]
+
+[node name="Shape" type="CollisionShape2D" parent="Plataforma09BlocoNadaJunta/Body"]
+shape = SubResource( 7 )
+
+[node name="PlatTut" type="Sprite" parent="."]
+position = Vector2( -33, 0 )
+texture = ExtResource( 12 )
+
+[node name="Body" type="StaticBody2D" parent="PlatTut"]
+
+[node name="Shape" type="CollisionShape2D" parent="PlatTut/Body"]
+position = Vector2( 0, 1.79459 )
+shape = SubResource( 8 )
+
+[node name="calsada1" type="Sprite" parent="."]
+position = Vector2( 195.168, -24.0006 )
+texture = ExtResource( 14 )
+
+[node name="Body" type="StaticBody2D" parent="calsada1"]
+
+[node name="Shape" type="CollisionShape2D" parent="calsada1/Body"]
+position = Vector2( -0.0947113, 15.4597 )
+shape = SubResource( 9 )
+
+[node name="Muro" type="Sprite" parent="."]
+position = Vector2( 233.732, 35.4648 )
+z_index = 1
+texture = ExtResource( 15 )
+
+[node name="Body" type="StaticBody2D" parent="Muro"]
+
+[node name="Shape" type="CollisionShape2D" parent="Muro/Body"]
+position = Vector2( 0.0995026, -11.9046 )
+shape = SubResource( 10 )
+
+[node name="MuroSemColisao" type="Sprite" parent="."]
+position = Vector2( 269.706, 35.1675 )
+z_index = 1
+texture = ExtResource( 15 )

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Tiles/Mercado.png" type="Texture" id=1]
+
+[node name="Mercado" type="Sprite"]
+scale = Vector2( 8, 8 )
+texture = ExtResource( 1 )

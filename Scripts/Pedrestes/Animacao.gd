@@ -1,0 +1,19 @@
+extends AnimatedSprite
+
+var PedestresParado = [["res://Assets/Pedestre/Pedestre01/Parado/Parado01.png"],["res://Assets/Pedestre/Pedestre02/Parado/Parado01.png"],["res://Assets/Pedestre/Pedestre03/Parado/Parado01.png"]]
+var PedestresParadoMascara = [["res://Assets/Pedestre/Pedestre01/ParadoMascara/Parado01.png"],["res://Assets/Pedestre/Pedestre02/ParadoMascara/Parado01.png"],["res://Assets/Pedestre/Pedestre03/ParadoMascara/Parado01.png"]]
+var PedestresAndando = [["res://Assets/Pedestre/Pedestre01/Andando/Andando01.png","res://Assets/Pedestre/Pedestre01/Andando/Andando02.png","res://Assets/Pedestre/Pedestre01/Andando/Andando03.png","res://Assets/Pedestre/Pedestre01/Andando/Andando04.png","res://Assets/Pedestre/Pedestre01/Andando/Andando05.png","res://Assets/Pedestre/Pedestre01/Andando/Andando06.png","res://Assets/Pedestre/Pedestre01/Andando/Andando07.png","res://Assets/Pedestre/Pedestre01/Andando/Andando08.png"],["res://Assets/Pedestre/Pedestre02/Andando/Andando01.png","res://Assets/Pedestre/Pedestre02/Andando/Andando02.png","res://Assets/Pedestre/Pedestre02/Andando/Andando03.png","res://Assets/Pedestre/Pedestre02/Andando/Andando04.png","res://Assets/Pedestre/Pedestre02/Andando/Andando05.png","res://Assets/Pedestre/Pedestre02/Andando/Andando06.png","res://Assets/Pedestre/Pedestre02/Andando/Andando07.png","res://Assets/Pedestre/Pedestre02/Andando/Andando08.png"],["res://Assets/Pedestre/Pedestre03/Andando/Andando01.png","res://Assets/Pedestre/Pedestre03/Andando/Andando02.png","res://Assets/Pedestre/Pedestre03/Andando/Andando03.png","res://Assets/Pedestre/Pedestre03/Andando/Andando04.png","res://Assets/Pedestre/Pedestre03/Andando/Andando05.png","res://Assets/Pedestre/Pedestre03/Andando/Andando06.png","res://Assets/Pedestre/Pedestre03/Andando/Andando07.png","res://Assets/Pedestre/Pedestre03/Andando/Andando08.png"]]
+var PedestresAndandoMascara = [["res://Assets/Pedestre/Pedestre01/AndandoMascara/Andando01.png","res://Assets/Pedestre/Pedestre01/AndandoMascara/Andando02.png","res://Assets/Pedestre/Pedestre01/AndandoMascara/Andando03.png","res://Assets/Pedestre/Pedestre01/AndandoMascara/Andando04.png","res://Assets/Pedestre/Pedestre01/AndandoMascara/Andando05.png","res://Assets/Pedestre/Pedestre01/AndandoMascara/Andando06.png","res://Assets/Pedestre/Pedestre01/AndandoMascara/Andando07.png","res://Assets/Pedestre/Pedestre01/AndandoMascara/Andando08.png"],["res://Assets/Pedestre/Pedestre02/AndandoMascara/Andando01.png","res://Assets/Pedestre/Pedestre02/AndandoMascara/Andando02.png","res://Assets/Pedestre/Pedestre02/AndandoMascara/Andando03.png","res://Assets/Pedestre/Pedestre02/AndandoMascara/Andando04.png","res://Assets/Pedestre/Pedestre02/AndandoMascara/Andando05.png","res://Assets/Pedestre/Pedestre02/AndandoMascara/Andando06.png","res://Assets/Pedestre/Pedestre02/AndandoMascara/Andando07.png","res://Assets/Pedestre/Pedestre02/AndandoMascara/Andando08.png"],["res://Assets/Pedestre/Pedestre03/AndandoMascara/Andando01.png","res://Assets/Pedestre/Pedestre03/AndandoMascara/Andando02.png","res://Assets/Pedestre/Pedestre03/AndandoMascara/Andando03.png","res://Assets/Pedestre/Pedestre03/AndandoMascara/Andando04.png","res://Assets/Pedestre/Pedestre03/AndandoMascara/Andando05.png","res://Assets/Pedestre/Pedestre03/AndandoMascara/Andando06.png","res://Assets/Pedestre/Pedestre03/AndandoMascara/Andando07.png","res://Assets/Pedestre/Pedestre03/AndandoMascara/Andando08.png"]]
+
+func _ready() -> void:
+	var instancia = SpriteFrames.new()
+	randomize()
+	var escolha = randi() % 3
+	#Parado
+	for i in range(PedestresParado[escolha].size()):
+		frames.add_frame("Parado",load(PedestresParado[escolha][i]),i)
+		frames.add_frame("ParadoMascara",load(PedestresParadoMascara[escolha][i]),i)
+	#Andando
+	for i in range(PedestresAndando[escolha].size()):
+		frames.add_frame("Andando",load(PedestresAndando[escolha][i]),i)
+		frames.add_frame("AndandoMascara",load(PedestresAndandoMascara[escolha][i]),i)
