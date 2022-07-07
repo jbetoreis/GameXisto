@@ -1,1 +1,1 @@
-Este é um jogo de plataforma cujo objetivo é ensinar as medidas básicas de prevenção contra a covid-19.
+Este é um jogo cujo objetivo é ensinar as medidas básicas de prevenção contra a covid-19.
