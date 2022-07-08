@@ -1,1 +1,1 @@
-Este é um jogo cujo objetivo é ensinar as medidas básicas de prevenção contra a covid-19.
+Projeto desenvolvido em ambiente acadêmico como requisito para conclusão do curso.
